@@ -1,0 +1,9 @@
+{% extends 'login/base.html' %}
+
+{% block content %}
+{% if key_expire%}
+    Activation key expired, <a href="{%url 'resend_activation_key' app_user.activation_key %}">Resend activation key</a>
+{% else %}
+    Account has been activated successfully, try <a href="{% url 'login' %}">Login</a>
+{% endif %}
+{% endblock %}

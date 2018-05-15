@@ -1,0 +1,17 @@
+{% extends 'login/base.html'%}
+
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{form}}
+    </table>
+    {%if user_exist %}
+        User already exist, please try <a href="{%url 'login' %}">Login</a>
+    {% else %}
+        <input type="submit" value="Register"/>
+    {% endif %}
+</form>
+{% endblock %}

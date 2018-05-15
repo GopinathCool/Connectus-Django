@@ -1,0 +1,17 @@
+{% extends 'login/base.html' %}
+{% block content %}
+<table class="table table-hover table-bordered table-responsive">
+    <tr>
+        <th>Uploaded by</th>
+        <th>Date</th>
+        <th>Uploaded file</th>
+    </tr>
+{% for value in document %}
+    <tr>
+        <td>{{value.upload_by}}</td>
+        <td class="{% if value.datestamp.date < current_date%} danger {% else %} success {% endif %}">{{value.datestamp.date|date:"D d M Y" }}</td>
+        <td><a href={{value.document.url}}>view</a></td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}
