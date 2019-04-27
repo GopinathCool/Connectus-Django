@@ -119,7 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-MEDIA_URL = '/media/'
+MEDIA_URL = '/medias/'
 MEDIA_ROOT = '/home/dev/connectus/media/uploads/testupload'
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/connectus/upload'
