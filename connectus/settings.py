@@ -130,3 +130,4 @@ EMAIL_HOST_USER = 'gopinathcool1993@gmail.com'
 EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 256
 EMAIL_USE_TLS = True
+test=""
