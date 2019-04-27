@@ -128,5 +128,5 @@ LOGIN_REDIRECT_URL = '/connectus/upload'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'gopinathcool1993@gmail.com'
 EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT = 25
+EMAIL_PORT = 256
 EMAIL_USE_TLS = True
